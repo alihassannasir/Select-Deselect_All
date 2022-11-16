@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+    <style>
+        button {
+            width: 190px;
+            height: 40px;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1" onclick="SelectAll()">Check All</button>
+    <button id="btn2" onclick="DeselectAll()">UnCheck All</button>
+    <div id="todos">
+        <input type="checkbox" name="check" id="check">delectus aut autem<br>
+        <input type="checkbox" name="check" id="check">quis ut nam facilis et officia qui<br>
+        <input type="checkbox" name="check" id="check">fugiat veniam minus<br>
+        <input type="checkbox" name="check" id="check">et porro tempora<br>
+        <input type="checkbox" name="check" id="check">laboriosam mollitia et enim quasi adipisci quia provident illum<br>
+        <input type="checkbox" name="check" id="check">qui ullam ratione quibusdam voluptatem quia omnis<br>
+        <input type="checkbox" name="check" id="check">illo expedita consequatur quia in<br>
+        <input type="checkbox" name="check" id="check">quo adipisci enim quam ut ab<br>
+        <input type="checkbox" name="check" id="check">molestiae perspiciatis ipsa<br>
+        <input type="checkbox" name="check" id="check">illo est ratione doloremque quia maiores aut<br>
+        <input type="checkbox" name="check" id="check">vero rerum temporibus dolor<br>
+        <input type="checkbox" name="check" id="check">ipsa repellendus fugit nisi<br>
+        <input type="checkbox" name="check" id="check">et doloremque nulla<br>
+        <input type="checkbox" name="check" id="check">repellendus sunt dolores architecto voluptatum<br>
+        <input type="checkbox" name="check" id="check">ab voluptatum amet voluptas<br>
+        <input type="checkbox" name="check" id="check">accusamus eos facilis sint et aut voluptatem<br>
+        <input type="checkbox" name="check" id="check">quo laboriosam deleniti aut qui<br>
+        <input type="checkbox" name="check" id="check">dolorum est consequatur ea mollitia in culpa<br>
+        <input type="checkbox" name="check" id="check">molestiae ipsa aut voluptatibus pariatur dolor nihil<br>
+        <input type="checkbox" name="check" id="check">ullam nobis libero sapiente ad optio sint<br>
+        <input type="checkbox" name="check" id="check">suscipit repellat esse quibusdam voluptatem incidunt<br>
+        <input type="checkbox" name="check" id="check">distinctio vitae autem nihil ut molestias quo<br>
+        <input type="checkbox" name="check" id="check">et itaque necessitatibus maxime molestiae qui quas velit<br>
+    </div>
+
+
+    <script>
+        function SelectAll(){
+        let check = document.getElementsByName("check");
+        let checkedlen = check.length;
+        for(var x=0; x<checkedlen; x++){
+            check[x].checked = true;
+        }
+        }
+        function DeselectAll(){
+        let check = document.getElementsByName("check");
+        let checkedlen = check.length;
+        for(var x=0; x<checkedlen; x++){
+            check[x].checked = false;
+        }
+        }
+    </script>
+</body>
+
+</html>
